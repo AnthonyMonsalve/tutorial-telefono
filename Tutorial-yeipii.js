@@ -66,16 +66,20 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Capa_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#EDEDED").s().p("A7kDDQgyAAAAg8IAAlJMA4tAAAIAAFJQAAA8gyAAg");
-	this.shape.setTransform(181.5,265.9);
+	this.shape.graphics.f().s("#C4C4C4").ss(1,2,1).p("AAAjhIAAHD");
+	this.shape.setTransform(182.6,264.8);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("A8WTQMAAAgliQAAg9AyAAMA3JAAAQAyAAAAA9MAAAAlig");
-	this.shape_1.setTransform(181.5,123.2);
+	this.shape_1.graphics.f("#EDEDED").s().p("A7kDmQgyAAAAhIIAAmDMA4tAAAIAAGDQAABIgyAAgAALDiIAAnDg");
+	this.shape_1.setTransform(181.5,264.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FFFFFF").s().p("A8WS5MAAAgk1QAAg8AyAAMA3JAAAQAyAAAAA8MAAAAk1g");
+	this.shape_2.setTransform(181.5,120.9);
 
-}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(0,0,363.1,285.4), null);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Símbolo2, new cjs.Rectangle(0,0,363.1,288.4), null);
 
 
 (lib.Símbolo1 = function(mode,startPosition,loop) {
@@ -208,12 +212,18 @@ p.nominalBounds = new cjs.Rectangle(-2.5,-3.1,30.5,27.4);
 	// Capa_1
 	this.instance = new lib.Símbolo1();
 	this.instance.parent = this;
-	this.instance.setTransform(188,325.4,1,1,0,0,0,188,325.4);
+	this.instance.setTransform(186.1,-1.2,0.992,0.27,0,0,0,188,0);
+	this.instance.alpha = 0.012;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.instance_1 = new lib.Símbolo1();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(186.1,447.6,0.991,0.31,0,0,0,188,0);
+	this.instance_1.alpha = 0.012;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,376,650.9);
+p.nominalBounds = new cjs.Rectangle(-0.3,-1.2,372.8,650.8);
 
 
 (lib.BotonInicioSombra = function(mode,startPosition,loop) {
@@ -328,7 +338,7 @@ p.nominalBounds = new cjs.Rectangle(10.6,2.5,131.9,54.8);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12).to({_off:false},0).wait(1).to({regY:142.7,scaleX:0.32,scaleY:0.32,alpha:0.125},0).wait(1).to({scaleX:0.41,scaleY:0.41,alpha:0.25},0).wait(1).to({scaleX:0.5,scaleY:0.5,y:498.1,alpha:0.375},0).wait(1).to({scaleX:0.59,scaleY:0.59,alpha:0.5},0).wait(1).to({scaleX:0.68,scaleY:0.68,alpha:0.625},0).wait(1).to({scaleX:0.77,scaleY:0.77,alpha:0.75},0).wait(1).to({scaleX:0.87,scaleY:0.87,alpha:0.875},0).wait(1).to({scaleX:0.96,scaleY:0.96,alpha:1},0).wait(13));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12).to({_off:false},0).wait(1).to({regY:143.9,scaleX:0.32,scaleY:0.32,y:498.4,alpha:0.125},0).wait(1).to({scaleX:0.41,scaleY:0.41,y:498.5,alpha:0.25},0).wait(1).to({scaleX:0.5,scaleY:0.5,y:498.7,alpha:0.375},0).wait(1).to({scaleX:0.59,scaleY:0.59,y:498.8,alpha:0.5},0).wait(1).to({scaleX:0.68,scaleY:0.68,y:498.9,alpha:0.625},0).wait(1).to({scaleX:0.77,scaleY:0.77,y:499,alpha:0.75},0).wait(1).to({scaleX:0.87,scaleY:0.87,y:499.1,alpha:0.875},0).wait(1).to({scaleX:0.96,scaleY:0.96,y:499.3,alpha:1},0).wait(13));
 
 	// Botón
 	this.IniciarBTN = new lib.Iniciarbtn();
@@ -363,7 +373,7 @@ p.nominalBounds = new cjs.Rectangle(10.6,2.5,131.9,54.8);
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(12).to({_off:false},0).wait(1).to({alpha:0.091},0).wait(1).to({alpha:0.182},0).wait(1).to({alpha:0.273},0).wait(1).to({alpha:0.364},0).wait(1).to({alpha:0.455},0).wait(1).to({alpha:0.545},0).wait(1).to({alpha:0.636},0).wait(1).to({alpha:0.727},0).wait(1).to({alpha:0.818},0).wait(1).to({alpha:0.909},0).wait(1).to({alpha:1},0).to({_off:true},1).wait(9));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(12).to({_off:false},0).wait(1).to({alpha:0.091},0).wait(1).to({alpha:0.182},0).wait(1).to({alpha:0.273},0).wait(1).to({alpha:0.364},0).wait(1).to({alpha:0.455},0).wait(1).to({alpha:0.545},0).wait(1).to({alpha:0.636},0).wait(1).to({alpha:0.727},0).wait(1).to({alpha:0.818},0).wait(1).to({alpha:0.909},0).wait(1).to({alpha:1},0).wait(10));
 
 	// Telefono
 	this.instance_3 = new lib.phoneblack();
@@ -443,7 +453,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Tutorial_yeipii_atlas_.png?1551655872510", id:"Tutorial_yeipii_atlas_"}
+		{src:"images/Tutorial_yeipii_atlas_.png?1551657344703", id:"Tutorial_yeipii_atlas_"}
 	],
 	preloads: []
 };
