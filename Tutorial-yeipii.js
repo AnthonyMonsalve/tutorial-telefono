@@ -644,7 +644,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Tutorial_yeipii_atlas_.png?1551662646461", id:"Tutorial_yeipii_atlas_"}
+		{src:"images/Tutorial_yeipii_atlas_.png?1551662984682", id:"Tutorial_yeipii_atlas_"}
 	],
 	preloads: []
 };
